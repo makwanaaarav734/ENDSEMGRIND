@@ -1,0 +1,16 @@
+int x = 10;
+
+int getNumber() {
+    x = x + 5;
+    return x;
+}
+
+int main() {
+    int a = getNumber();
+    int b = getNumber();
+
+    printf("%d %d", a, b);
+
+    return 0;
+}
+this code will run as x is declared globally and can be accessed at al points.

@@ -1,0 +1,12 @@
+But WHY do we need unions?
+Memory efficiency.
+
+Imagine a sensor system that can operate in three modes:
+1. Temperature mode
+2. Humidity mode
+3. Pressure mode
+At any given moment, the system only needs to store readings for one mode.
+
+A structure would reserve separate memory for all three arrays.
+
+A union lets all three arrays share the same memory because only one mode is active at a time.
